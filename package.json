@@ -2,7 +2,7 @@
   "name": "comsicjs",
   "version": "1.0.0",
   "description": "Medium backup",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "development": "nodemon app.js -e js, views/html"
