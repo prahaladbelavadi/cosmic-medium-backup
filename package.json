@@ -1,0 +1,23 @@
+{
+  "name": "comsicjs",
+  "version": "1.0.0",
+  "description": "Medium backup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prahaladbelavadi/cosmic-medium-backup.git"
+  },
+  "keywords": [
+    "cosmic",
+    "js"
+  ],
+  "author": "Prahalad Belavadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prahaladbelavadi/cosmic-medium-backup/issues"
+  },
+  "homepage": "https://github.com/prahaladbelavadi/cosmic-medium-backup#readme"
+}
