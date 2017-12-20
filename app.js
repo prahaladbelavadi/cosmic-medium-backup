@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 
 var hogan = require('hogan-express')
 app.engine('html', hogan)
-app.set('port', (process.env.PORT || 3000))
+app.set('port', (process.env.PORT || 8123))
 app.use('/', express.static(__dirname + '/public/'))
 
 // Config
@@ -27,4 +27,10 @@ require('./routes/index.js')(app, config)
 require('./routes/import-posts.js')(app, config, async)
 require('./routes/add-crons.js')(app, config, async)
 require('./routes/delete-cron.js')(app, config)
+app.listen(app.get('port'))
+
+
+// Crons
+var getCrons = require('./routes/crons.js')
+setInterval(() => getCrons(app, config, async), config.cron_interval) // every 60 minutes
 app.listen(app.get('port'))
