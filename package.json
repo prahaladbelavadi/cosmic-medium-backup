@@ -4,7 +4,8 @@
   "description": "Medium backup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "development": "nodemon app.js -e js, views/html"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/prahaladbelavadi/cosmic-medium-backup/issues"
   },
-  "homepage": "https://github.com/prahaladbelavadi/cosmic-medium-backup#readme"
+  "homepage": "https://github.com/prahaladbelavadi/cosmic-medium-backup#readme",
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.15.2",
+    "cosmicjs": "^2.35.0",
+    "express": "^4.14.0",
+    "hogan-express": "^0.5.2",
+    "nodemon": "^1.11.0",
+    "request": "^2.79.0",
+    "slug": "^0.9.1",
+    "xml2js": "^0.4.17"
+  }
 }
